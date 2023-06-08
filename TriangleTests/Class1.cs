@@ -214,5 +214,56 @@ namespace TriangleTests
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void ValidResponse_Input2and3and10_OutputInValidTriangle()
+        {
+            //Arrange
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 10;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidResponse_Input10and12and1_OutputInValidTriangle()
+        {
+            //Arrange
+            int firstSide = 10;
+            int secondSide = 12;
+            int thirdSide = 1;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidResponse_Input33and41and5_OutputInValidTriangle()
+        {
+            //Arrange
+            int firstSide = 33;
+            int secondSide = 41;
+            int thirdSide = 5;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
